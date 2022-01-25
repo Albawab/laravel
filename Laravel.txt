@@ -1,0 +1,117 @@
+Visual code
+extension:
+Auto Close Tag
+Format HTML in PHP
+IntelliSense for CSS class names in HTML
+Laravel Blade Snippets
+Material Icon Theme
+PHP Formatter
+PHP IntelliSense
+PHP Namespace Resolver
+PHP Formatter
+---------------------------------------------
+Xampp 8.1.1
+
+---------------------------------------------
+composer dowenload:
+1- https://getcomposer.org/download/
+2- Composer-Setup.exe
+
+---------------------------------------------
+laravel Install:
+https://laravel.com/docs/8.x#getting-started-on-windows
+Windows Terminal
+
+Project
+https://laravel.com/docs/8.x#installation-via-composer
+
+Windows Terminal: composer create-project laravel/laravel "Name"
+
+Windows Terminal: cd example-app
+
+Uit visual code
+Aan visual code
+Windows Terminal: php artisan serve
+
+-------------------------------------------------------
+Db
+1- .env => DB_Host=127.0.0.1
+2  .env => DB-DATABASE=test
+
+php artisan  migrate:status
+-------------------------------------------------------
+UI bootstrap
+
+NPM install:
+https://nodejs.org/en/download/
+
+https://www.techiediaries.com/laravel/how-to-install-bootstrap-in-laravel-6-7-by-example/
+
+https://laravel.com/docs/7.x/frontend#introduction
+
+npm install / npm fund / npm run development / ?npm run dev
+Visual code Terminal: composer require laravel/ui
+
+Visual code Terminal: php artisan ui bootstrap
+
+Visual code Terminal: php artisan ui bootstrap --auth
+
+-----------------------------------------------------------
+
+layouts -> app.blade.php
+
+<div class="container">
+     @yield('content')
+</div>
+
+-----------------------------------------------------------
+
+php artisan serve
+php artisan make:model Reservation -mrc
+$table->text('description');
+php artisan migrate
+php artisan migrate:fresh /////====> all database
+
+
+----------------------------------------------------------
+Type
+migration: https://laravel.com/docs/8.x/migrations#available-column-types
+$table->text('description');
+php artisan migrate
+php artisan migrate:fresh /////====> all database
+
+--------------------------------------------------------------------
+route
+Route::resource('....',.....Controller::class);
+
+--------------------------------------------------------------------
+dump("Hallo");
+echo "Hallo";
+
+--------------------------------------------------------------------
+Login start 
+
+web.php
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index']);
+
+--------------------------------------------------------------------------
+Form
+@method('PUT')
+@method('delete')
+@csrf
+
+route
+action="{{route('.....update',['....'=> $charity->id])}}"
+
+--------------------------------------------------------------------------
+Creat updat destroy
+redirect()->route('charity.index')->with('charities',$charities)->with....
+
+-------------------------------------------------------------------------
+
+Imgs storage Folder
+
+php artisan storage:link
+src="{{URL('storage/imgs/a.png')}}"
+-------------------------------------------------------------------------
+
